@@ -102,7 +102,7 @@ public class AliOssUploadManager {
         put.setProgressCallback(new OSSProgressCallback<PutObjectRequest>() {
             @Override
             public void onProgress(PutObjectRequest request, long currentSize, long totalSize) {
-                Log.d("PutObject", "currentSize: " + currentSize + " totalSize: " + totalSize);
+                // Log.d("PutObject", "currentSize: " + currentSize + " totalSize: " + totalSize);
                 String str_currentSize = Long.toString(currentSize);
                 String str_totalSize = Long.toString(totalSize);
                 WritableMap onProgressValueData = Arguments.createMap();
